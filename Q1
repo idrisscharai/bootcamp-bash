@@ -1,0 +1,6 @@
+#!/bin/bash
+
+name=Idriss
+surname=Charai
+
+echo "$name $surname"
