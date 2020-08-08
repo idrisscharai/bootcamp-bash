@@ -1,22 +1,8 @@
 #!/bin/bash
 
-x=1
-
-while [ true ];
-
-do
-
-	if [ -z $($x) ];
-	then
-		break
-	else
-		:
-	fi
-
-echo "$( $x )"
-
-x=$[x+1]
-
+for ARG in "$@"; do
+	echo -e "\n$ARG"
 done
 
-echo "you have passed $# arguments!"
+
+echo -e "\nYou have passed $# arguments!"
